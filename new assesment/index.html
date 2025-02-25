@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            background: #ffc801;
+            color: white;
+        }
+        .sidebar {
+            width: 250px;
+            background: #2403ff;
+            height: 100vh;
+            padding: 20px;
+            text-align: center;
+        }
+        .sidebar img {
+            width: 100px; 
+            height: 100px; 
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+        .sidebar ul li {
+            padding: 10px;
+            cursor: pointer;
+            color: white;
+        }
+        .main-content {
+            padding: 50px;
+            flex: 1;
+        }
+        h1 {
+            font-size: 40px;
+        }
+        h2 {
+            font-size: 24px;
+        }
+        .highlight {
+            background: teal;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .developer {
+            text-decoration: underline;
+        }
+        .social-links img {
+            width: 40px;
+            height: 40px;
+            margin: 10px;
+        }
+        .btn {
+            padding: 10px 20px;
+            margin-top: 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:first-of-type {
+            background: white;
+            color: #2f4f4f;
+        }
+        .btn:last-of-type {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        /* Projects Section */
+        .projects {
+            margin-top: 30px;
+        }
+        .project-cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: white;
+            color: black;
+            width: 250px;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .card h3 {
+            margin: 10px 0;
+        }
+        .card p {
+            font-size: 14px;
+            color: #444;
+        }
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            background: teal;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <img src="vis.jpg" alt="Profile Picture">
+        <ul>
+            <li>📄 About</li>
+            <li>💼 Experience</li>
+            <li>📁 Projects</li>
+            <li>📊 Skills</li>
+            <li>🎓 Education</li>
+            <li>📧 Contact</li>
+            <li>📂 Resume</li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h1>Hi, I'm <span class="highlight">Vishant Bhardwaj</span>.</h1>
+        <h2>A <span class="developer">Developer</span></h2>
+        <p>Self-driven, quick starter, passionate programmer with a curious mind 
+            who enjoys solving complex and challenging real-world problems.</p>
+
+        <div class="social-links">
+            <a href="#"><img src="https://tse1.mm.bing.net/th?id=OIP.WbP2N4M5QjG24ntMED-G0wHaHa&pid=Api&P=0&h=220" alt="LinkedIn"></a>
+            <a href="#"><img src="https://tse2.mm.bing.net/th?id=OIP.fqZ9-PPqcG_cm0k3JfoINQHaEK&pid=Api&P=0&h=220" alt="GitHub"></a>
+        </div>
+
+        <button class="btn">Read More</button>
+        <button class="btn">Contact Me</button>
+
+        <!-- Projects Section -->
+        <div class="projects">
+            <h2>My Projects</h2>
+            <div class="project-cards">
+                <div class="card">
+                    <img src="netra mitra.jpg" alt="Project 1">
+                    <h3>Netra Mitra  </h3>
+                    <p>A smart blind-guiding robot with obstacle avoidance, pit detection, GPS navigation, voice assistance, and haptic feedback for safe mobility.</p>
+                    <a href="#">View Project</a>
+                </div>
+                <div class="card">
+                    <img src="miranda.webp" alt="Project 2">
+                    <h3>Miranda Website Clone </h3>
+                    <p>Developed a clone of the Miranda website using HTML and CSS.</p>
+                    <a href="#">View Project</a>
+                </div>
+                <div class="card">
+                    <img src="rps.jpg" alt="Project 3">
+                    <h3>Rock Paper Scissors Game and Tic Tac Toe Game</h3>
+                    <p>Implemented game logic and win conditions using JavaScript</p>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+   
+</body>
+</html>
